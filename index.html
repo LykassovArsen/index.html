@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>  
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: rgba(0, 0, 0, 0.5); 
+            color: white; 
+            padding: 20px; 
+            position: fixed; 
+            width: 100%; 
+            z-index: 1; 
+            display: flex; 
+            justify-content: left; 
+            align-items: left;
+            text-align: left;
+        }
+        .blackdiv {
+            color: white; 
+            background-color: rgb(0, 0, 0); 
+            width: 100%; 
+            height: 100vh; 
+            display: flex; 
+            justify-content: flex-start; 
+            align-items: center; 
+            flex-direction: row; 
+            text-align: left; 
+            position: relative; 
+        }
+        .blackdiv3 {
+            color: white; 
+            background-color: rgb(0, 0, 0); 
+            width: 100%; 
+            height: 50vh; 
+            display: flex; 
+            justify-content: flex-start; 
+            align-items: center; 
+            flex-direction: row; 
+            text-align: left; 
+            position: relative; 
+        }
+        .blackdiv4 {
+            color: white; 
+            background-color: rgb(0, 0, 0); 
+            width: 100%; 
+            height: 50vh;
+            display: flex;
+            margin-top: 20px;
+            padding-left: 50%;
+            box-sizing: border-box;
+            position:absolute;
+        }
+        .blackdiv4 h1 {
+            font-size: 2em;
+            margin: 0;
+            padding: 0;
+        }
+        .whitediv {
+            color: black;
+            background-color: white ;
+            width:100%;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 0;
+        }
+        .whitediv4 {
+            color: black;
+            background-color: white ;
+            width:100%;
+            height: auto;
+            display:flex;
+            z-index: 6;
+            flex-direction: row-reverse;
+            padding: 50px 0;
+            position: absolute;
+        }
+        .whitediv1 {
+            color: black;
+            background-color: white ;
+            width:100%;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 0;
+            height: 37vh;
+        }
+        .whitediv h2 {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        .whitediv img {
+            margin-top: 20px;
+            width: 50px;
+            height: auto;
+        }
+
+        .skill-container {
+            display: flex;
+            justify-content: flex-end; 
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .skill-name {
+            margin-left: 20px; 
+            margin-right: 20px; 
+            width: 100px; 
+        }
+
+        .skill-level {
+            display: flex;
+            flex-direction: row-reverse; 
+        }
+
+        .skill-level .circle {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: black;
+            margin-right: 10px;
+        }
+
+        .circle.filled {
+            background-color: white;
+        }
+        .gradientdiv{
+            height:100vh;
+            display:flex;
+        }
+        .big-text {
+            color: white;
+            display: flex;
+            flex-direction: column;
+            margin-left: 10vw; 
+            margin-top: -20vh; 
+            text-align: left;
+            position: absolute; 
+            z-index: 2; 
+        }
+        .big-text h1 {
+            font-size: 3em;
+            margin-bottom: 20px; 
+        }
+        .big-text a {
+            color: white;
+            text-decoration: underline;
+            margin-left: 0.5em; 
+            display: flex;
+        }
+        .image-container {
+            display: flex;
+            justify-content: flex-end; 
+            align-items: center;
+            position: absolute; 
+            overflow: hidden; 
+            right: 5%; 
+            top: -10%; 
+            bottom: 0; 
+            z-index: 1; 
+        }
+
+        .image-container img {
+            max-width: 500%; 
+            height: auto; 
+            z-index:+3;
+            display: flex;
+            align-items: left;
+            margin-left: 100px;
+        }
+
+        .left-containers {
+            position: relative;
+            z-index: 2;
+            margin-top: 35vh; 
+            margin-left: 10vw; 
+            display: flex;
+            flex-direction: row;
+            gap: 10px; 
+        }
+
+        .left-container1 {
+            background-color: rgb(255, 255, 255); 
+            color: rgb(0, 0, 0); 
+            padding: 1px 10px; 
+            border-radius: 30px; 
+        }
+
+        .left-container2 {
+            background-color: rgb(0, 0, 0); 
+            color: rgb(255, 255, 255); 
+            padding: 1px 10px; 
+            border-radius: 30px; 
+            border: 2px solid white; 
+        }
+
+        .left-container3{
+            background-color: rgba(255, 255, 255, 0.93); 
+            color: rgb(0, 0, 0); 
+            padding: 1px 10px; 
+            border-radius: 30px; 
+        }
+
+        .left-container4{
+            background-color: rgb(0, 0, 0); 
+            color: rgb(255, 255, 255); 
+            padding: 1px 10px; 
+            border-radius: 30px; 
+            border: 2px solid white; 
+        }
+        .image2{
+            margin-top: 150px;
+            position: absolute;
+            display: flex;
+        }
+        .blackdiv2::before {
+            content: " \25A4 \25A5 \25A6 \25A7 \25A8 \25A9 \25A4 \25A5 \25A6 \25A7 \25A8 \25A9 \25A4 \25A5 \25A6 \25A7 \25A8 \25A9  ";
+            color: white;
+            font-size: 30px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            opacity: 0.2;
+        }
+
+        .text-animation {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 60%; 
+            color: white;
+            opacity: 0;
+            animation: appear-text 5s forwards;
+            text-align: center;
+        }
+
+        @keyframes appear-text {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .typing-animation {
+            overflow: hidden;
+            white-space: normal;
+            display: inline-block;
+            animation: typing 5s steps(40, end);
+            max-width: 70ch;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        .whitediv h2 {
+            margin-top: 0;
+            margin-bottom: 40px; 
+            font-size: 3em; 
+            text-align: left; 
+            margin-left: 10%; 
+        }
+        .project-container {
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            margin-top: 50px; 
+            padding: 0 10%; 
+        }
+
+        .project-box {
+            flex: 1; 
+            text-align: center; 
+            transition: transform 0.3s ease; 
+            margin-bottom: 50px; 
+            border: 3px solid white;
+            border-radius: 30px;
+            max-width: 300px; 
+            overflow: hidden; 
+        }
+
+        .project-box img {
+            width: 100%; 
+            height: auto; 
+            border-radius: 10px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+        }
+        .project-box1 {
+            flex: 1; 
+            text-align: center; 
+            transition: transform 0.3s ease; 
+            margin-bottom: 50px; 
+            border: 3px solid white;
+            border-radius: 30px;
+            max-width: 300px; 
+            overflow: hidden; 
+        }
+
+        .project-box1 img {
+            width: 100%; 
+            height: auto; 
+            border-radius: 10px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+        }
+        .project-box p {
+            margin-top: 20px; 
+            font-size: 1.5em; 
+        }
+        .tetraedr1{
+            left:30px;
+            border-radius: 30px;
+            display: flex;
+            border: 2px solid white;
+            width: 500px;
+            height: 300px;
+            left: 0; 
+            margin-left: 100px; 
+            position: absolute; 
+            margin-top: 20px;
+        }
+
+        .reflected-blog {
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            margin-top: 20px; 
+        }
+
+        .tetraedr1{
+            right:30px;
+            border-radius: 30px;
+            display: flex;
+            border: 2px solid white;
+            width: 500px;
+            height: 300px;
+            left: 0; 
+            margin-right: 100px; 
+            position: absolute; 
+            margin-top: 20px;
+            right: 0; 
+            margin-right: 100px; 
+            position: absolute; 
+            top: 40px;
+        }
+
+        .reflected-blog > div {
+            flex: 1; 
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div style="font-weight: bold; font-size: 24px;">Arsen Lykassov                |</div>
+        <div class="nav-link">Explore                  А</div>
+        <div class="nav-link">bout                      С</div>
+        <div class="nav-link">ontact</div>
+    </div>
+    
+    <div class="blackdiv">
+        <div class="big-text">
+            <h1>Hi, I'M ARSEN.</h1>
+            <a>Student of the Kazakhstan Physics and Mathematics School, FIZMAT.</a>
+        </div>
+        <div class="image-container">
+            <img src="https://i.ibb.co/wpxCxmF/Fotoram3-io.jpg" >
+        </div>
+        <div class="left-containers">
+            <div class="left-container1">
+                <h2> Math</h2>
+            </div>
+            <div class="left-container2">
+                <h2>English</h2>
+            </div>
+            <div class="left-container3">
+                <h2>IT</h2>
+            </div>
+            <div class="left-container4">
+                <h2>Physics</h2>
+            </div>
+        </div>
+    </div>
+    <div class="blackdiv blackdiv2">
+        <div class="text-animation">
+            <h1>ABOUT ME</h1>
+            <p class="typing-animation">I am a ninth grade student from the Kazakhstan Fizmat school (Republican Physics and Mathematics School). I am interested in Olympiad physics.</p>
+        </div>
+    </div>
+    <div class="whitediv1">
+        <h2 class="typing-animation">MY SKILLS</h2>
+        <div class="skill-container">
+            <div class="skill-name">Math    :</div>
+            <div class="skill-level">
+                <div class="circle filled"></div>
+                <div class="circle filled"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </div>
+        <div class="skill-container">
+            <div class="skill-name">Physics:</div>
+            <div class="skill-level">
+                <div class="circle filled"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </div>
+        <div class="skill-container">
+            <div class="skill-name">IT:</div>
+            <div class="skill-level">
+                <div class="circle filled"></div>
+                <div class="circle filled"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </div>
+        <div class="skill-container">
+            <div class="skill-name">English:</div>
+            <div class="skill-level">
+                <div class="circle filled"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </div>
+        <div class="skill-container">
+            <div class="skill-name">PE:</div>
+            <div class="skill-level">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+    <div class="blackdiv3">
+        <h1 style="color: white;display: flex; font-size: 3em; margin-top: 100px; margin-left: 30px; text-align: center;">My Projects</h1>
+        <div class="project-container">
+            <div class="project-box1">
+                <img src="https://code.visualstudio.com/assets/blogs/2021/10/20/vscode-dev.png" alt="Project 1">
+                <p>project 1</p>
+            </div>
+            <div class="project-box">
+                <img src="https://play-lh.googleusercontent.com/0ynzKm6Uup2jd3Rdh1c-pwEA0sudtpp9ItULI8a-BdLSjht27ZSmD3x-O3VitcvnjIY=w526-h296-rw" alt="Project 2">
+                <p>project 2</p>
+            </div>
+        </div> 
+    </div>
+    <div class="whitediv4">
+        <div style="display: flex; align-items: center;">
+            <div class="tetraedr1">
+               <a href="https://medium.com/@zazazsazzzz/merge-sort-5ce41715be8d?source=your_stories_page-------------------------------------"> <img src="https://i.ibb.co.com/zVyLywX/2024-04-16-23-39-41.png" style="border-radius: 30px;"></a>
+            </div>
+            <div style="margin-left: 1px;"> 
+                <h2 style="font-size: 2em; margin-right: 200px; margin-top: 150px;">Sorting algorythm – Quick Sort</h2>
+            </div>
+        </div>
+        
+    </div>
+ 
+    <div class="blackdiv">
+        <h1 style="text-align: center;">My Blog</h1>
+        <div style="display: flex; align-items: center;">
+            <div class="tetraedr1">
+                <a href="https://medium.com/@zazazsazzzz/quick-sort-2cead95a7f26?source=your_stories_page-------------------------------------"><img u src="https://i.ibb.co.com/yBcBP5L/2024-04-16-23-40-04.png"  style="border-radius: 30px;"></a>
+            </div>
+            <div style="margin-left: 1px;"> 
+                <h2 style="font-size: 2em; margin-bottom: 10px;">Sorting algorythm – Merge Sort</h2>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
