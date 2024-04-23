@@ -51,8 +51,33 @@
             color: white; 
             background-color: rgb(0, 0, 0); 
             width: 100%; 
-            height: 50vh;
+            height: 70vh;
             display: flex;
+            padding-top: 70px;
+            margin-top: 20px;
+            padding-left: 50%;
+            box-sizing: border-box;
+            position: relative;
+        }
+        .blackdiv5 {
+            color: white; 
+            background-color: rgb(0, 0, 0); 
+            width: 100%; 
+            height: 60vh;
+            display: flex;
+            padding-top: 70px;
+            margin-top: 20px;
+            padding-left: 50%;
+            box-sizing: border-box;
+            position: relative;
+        }
+        .blackdiv6 {
+            color: white; 
+            background-color: rgb(0, 0, 0); 
+            width: 100%; 
+            height: 55vh;
+            display: flex;
+            padding-top: 70px;
             margin-top: 20px;
             padding-left: 50%;
             box-sizing: border-box;
@@ -343,8 +368,8 @@
             border-radius: 30px;
             display: flex;
             border: 2px solid white;
-            width: 500px;
-            height: 300px;
+            width: auto;
+            height: auto;
             left: 0; 
             margin-right: 100px; 
             position: absolute; 
@@ -353,10 +378,71 @@
             margin-right: 100px; 
             position: absolute; 
             top: 40px;
+            margin-left: 30px;
+        }
+        .tetraedr2{
+            right:30px;
+            border-radius: 30px;
+            display: flex;
+            border: 2px solid white;
+            width: auto;
+            height: auto;
+            left: 0; 
+            margin-right: 100px; 
+            position: absolute; 
+            margin-top: 20px;
+            right: 0; 
+            margin-right: 100px; 
+            position: absolute; 
+            top: 40px;
+            margin-left: 30px;
         }
 
         .reflected-blog > div {
             flex: 1; 
+        }
+
+        .contact-section {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 50px 0;
+        position: relative;
+        }
+
+        .contact-section h1 {
+        margin-bottom: 30px;
+        }
+
+        .contact-section form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+
+        .contact-section label,
+        .contact-section input,
+        .contact-section textarea {
+        margin-bottom: 20px;
+        }
+
+        .contact-section input,
+        .contact-section textarea {
+        width: 80%;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        }
+
+        .contact-section input[type="submit"] {
+        background-color: white;
+        color: black;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        }
+
+        .contact-section input[type="submit"]:hover {
+        background-color: gray;
         }
 
     </style>
@@ -469,24 +555,57 @@
         <h1 style="text-align: center;">My Blog</h1>
         <div style="display: flex; align-items: center;">
             <div class="tetraedr1">
-                <img src="https://i.ibb.co.com/yBcBP5L/2024-04-16-23-40-04.png" style="border-radius: 30px;">
-            </div>
-            <div style="margin-left: 1px;"> 
-                <a href="https://medium.com/@zazazsazzzz/merge-sort-5ce41715be8d?source=your_stories_page-------------------------------------"><h2 style="font-size: 2em; margin-bottom: 10px;">Sorting algorythm – Merge Sort</h2></a>
+                <a href="https://medium.com/me/stories/public#:~:text=Responses-,Merge%20sort.,-%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D1%83%D1%8E!%20%D0%AD%D1%82%D0%BE%20%D0%B7%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F"><img src="https://i.ibb.co.com/yBcBP5L/2024-04-16-23-40-04.png" style="border-radius: 30px;"></a>
+                <div style="margin-left: 1px;"> 
+                    <h2 style="font-size: 2em; margin-bottom: 10px; top: 20px; text-align: center; display: flex;">Sorting algorythm – Merge Sort</h2>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="whitediv4">
+    <div class="blackdiv5 ">
+        <div style="display: flex; align-items: center;">
+            <div class="tetraedr2">
+                <a href="https://medium.com/me/stories/public#:~:text=2%20min%20read-,Bubble%20Sort,-Bubble%20sort%2C%20%D0%B0"><img src="https://i.ibb.co.com/zVyLywX/2024-04-16-23-39-41.png" style="border-radius: 30px;"></a>
+            </div>
+            <div style="margin-left: 1px;"> 
+                <h2 style="font-size: 2em; margin-bottom: 10px;">Sorting algorythm – Bubble Sort</h2>
+            </div>
+        </div>
+    </div>
+    <div class="blackdiv6">
+        <div style="display: flex; align-items: center;">
+            <div class="tetraedr2">
+                <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCBsBWztFJT8eIIFbWZ2ak--4GdYaxD7VZ_A&s" style="border-radius: 30px;"></a>
+                <div style="margin-left: 1px;"> 
+                    <h2 style="font-size: 2em; margin-bottom: 10px;">Sorting algorythm – Quick Sort</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="whitediv4">
         <div style="display: flex; align-items: center;">
             <div class="tetraedr1">
                 <img src="https://i.ibb.co.com/zVyLywX/2024-04-16-23-39-41.png" style="border-radius: 30px;">
             </div>
             <div style="margin-left: 1px;"> 
-                <a href="https://medium.com/@zazazsazzzz/quick-sort-2cead95a7f26?source=your_stories_page-------------------------------------"><h2 style="font-size: 2em; margin-right: 200px; margin-top: 150px;">Sorting algorythm – Quick Sort</h2></a>
+                <h2 style="font-size: 2em; margin-right: 200px; margin-top: 150px;">Sorting algorythm – Quick Sort</h2>
             </div>
-        </div>
-        <div style="margin-top: 600px; display: flex; position: absolute; align-items: center; margin-bottom: 200px;"
+        </div> -->
+
+        <!-- <div style="margin-top: 600px; display: flex; position: absolute; align-items: center; margin-bottom: 200px;"
+        <h1>Contact Me</h1>
+        <form action="#" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" required></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div> -->
+    <div class="contact-section">
         <h1>Contact Me</h1>
         <form action="#" method="post">
             <label for="name">Name:</label><br>
@@ -498,6 +617,6 @@
             <input type="submit" value="Submit">
         </form>
     </div>
- 
+    
 </body>
 </html>
