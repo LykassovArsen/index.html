@@ -47,15 +47,25 @@
             text-align: left; 
             position: relative; 
         }
+        .spacebetween{
+            color: black;
+            background-color: white ;
+            width:100%;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            height: 5px;
+        
+        }
         .blackdiv4 {
             color: white; 
             background-color: rgb(0, 0, 0); 
             width: 100%; 
             height: 70vh;
-            display: flex;
-            padding-top: 70px;
-            margin-top: 20px;
-            padding-left: 50%;
+            /* padding-top: 70px;
+            margin-top: 20px; */
+            text-align: center;
+            /* padding-left: 50%; */
             box-sizing: border-box;
             position: relative;
         }
@@ -65,9 +75,6 @@
             width: 100%; 
             height: 60vh;
             display: flex;
-            padding-top: 70px;
-            margin-top: 20px;
-            padding-left: 50%;
             box-sizing: border-box;
             position: relative;
         }
@@ -77,9 +84,6 @@
             width: 100%; 
             height: 55vh;
             display: flex;
-            padding-top: 70px;
-            margin-top: 20px;
-            padding-left: 50%;
             box-sizing: border-box;
             position: relative;
         }
@@ -216,6 +220,8 @@
             color: rgb(0, 0, 0); 
             padding: 1px 10px; 
             border-radius: 30px; 
+            width: 100px;
+            text-align: center;
         }
 
         .left-container2 {
@@ -224,6 +230,8 @@
             padding: 1px 10px; 
             border-radius: 30px; 
             border: 2px solid white; 
+            width: 100px;
+            text-align: center;
         }
 
         .left-container3{
@@ -231,6 +239,8 @@
             color: rgb(0, 0, 0); 
             padding: 1px 10px; 
             border-radius: 30px; 
+            text-align: center;
+            width: 100px;
         }
 
         .left-container4{
@@ -239,6 +249,8 @@
             padding: 1px 10px; 
             border-radius: 30px; 
             border: 2px solid white; 
+            width: 100px;
+            text-align: center;
         }
         .image2{
             margin-top: 150px;
@@ -363,40 +375,43 @@
             margin-top: 20px; 
         }
 
-        .tetraedr1{
-            right:30px;
-            border-radius: 30px;
-            display: flex;
-            border: 2px solid white;
-            width: auto;
-            height: auto;
-            left: 0; 
-            margin-right: 100px; 
-            position: absolute; 
-            margin-top: 20px;
-            right: 0; 
-            margin-right: 100px; 
-            position: absolute; 
-            top: 40px;
-            margin-left: 30px;
-        }
-        .tetraedr2{
-            right:30px;
-            border-radius: 30px;
-            display: flex;
-            border: 2px solid white;
-            width: auto;
-            height: auto;
-            left: 0; 
-            margin-right: 100px; 
-            position: absolute; 
-            margin-top: 20px;
-            right: 0; 
-            margin-right: 100px; 
-            position: absolute; 
-            top: 40px;
-            margin-left: 30px;
-        }
+        .tetraedr1, .tetraedr2 {
+            left: 320px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    width: auto;
+    height: auto;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 30px;
+    padding: 20px;
+    align-items: center; 
+}
+
+        .text-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+.tetraedr1 img, .tetraedr2 img {
+    max-width: 100%;
+    border-radius: 30px;
+    margin-bottom: 20px; 
+}
+
+.tetraedr1 h2, .tetraedr2 h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+}
+
 
         .reflected-blog > div {
             flex: 1; 
@@ -461,7 +476,7 @@
             <a>Student of the Kazakhstan Physics and Mathematics School, FIZMAT.</a>
         </div>
         <div class="image-container">
-            <img src="https://i.ibb.co.com/Yhz0mDD/Fotoram2-io.jpg" >
+            <img src="https://i.ibb.co.com/QMdS2KP/Fotoram3-io.jpg" >
         </div>
         <div class="left-containers">
             <div class="left-container1">
@@ -540,7 +555,7 @@
     <div class="blackdiv3">
         <h1 style="color: white;display: flex; font-size: 3em; margin-top: 100px; margin-left: 30px; text-align: center;">My Projects</h1>
         <div class="project-container">
-            <div class="project-box1">
+            <div class="project-box">
                 <img src="https://code.visualstudio.com/assets/blogs/2021/10/20/vscode-dev.png" alt="Project 1">
                 <p>project 1</p>
             </div>
@@ -549,62 +564,48 @@
                 <p>project 2</p>
             </div>
         </div>
+    </div>
+        <div class="spacebetween"></div>
+        <div class="blackdiv4">
+            <h1 style="text-align: ">My Blog</h1>
+            <div style="align-items: center;">
+                <div class="tetraedr1">
+                    <a href="https://medium.com/me/stories/public#:~:text=Responses-,Merge%20sort.,-%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D1%83%D1%8E!%20%D0%AD%D1%82%D0%BE%20%D0%B7%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F">
+                        <img src="https://i.ibb.co.com/cgr2tr4/2024-04-16-23-39-41.png" style="border-radius: 30px;">
+                    </a>
+                    <div class="text-container">
+                        <h2>Sorting algorithm – Merge Sort</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
         
-    </div>
-    <div class="blackdiv4">
-        <h1 style="text-align: center;">My Blog</h1>
-        <div style="display: flex; align-items: center;">
-            <div class="tetraedr1">
-                <a href="https://medium.com/me/stories/public#:~:text=Responses-,Merge%20sort.,-%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D1%83%D1%8E!%20%D0%AD%D1%82%D0%BE%20%D0%B7%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F"><img src="https://i.ibb.co.com/yBcBP5L/2024-04-16-23-40-04.png" style="border-radius: 30px;"></a>
-                <div style="margin-left: 1px;"> 
-                    <h2 style="font-size: 2em; margin-bottom: 10px; top: 20px; text-align: center; display: flex;">Sorting algorythm – Merge Sort</h2>
+        <div class="blackdiv5">
+            <div style="display: flex; align-items: center;">
+                <div class="tetraedr2">
+                    <a href="https://medium.com/me/stories/public#:~:text=2%20min%20read-,Bubble%20Sort,-Bubble%20sort%2C%20%D0%B0">
+                        <img src="https://i.ibb.co.com/SKt7n7V/2024-04-16-23-40-04.png" style="border-radius: 30px;">
+                    </a>
+                    <div class="text-container">
+                        <h2>Sorting algorithm – Bubble Sort</h2>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="blackdiv5 ">
-        <div style="display: flex; align-items: center;">
-            <div class="tetraedr2">
-                <a href="https://medium.com/me/stories/public#:~:text=2%20min%20read-,Bubble%20Sort,-Bubble%20sort%2C%20%D0%B0"><img src="https://i.ibb.co.com/zVyLywX/2024-04-16-23-39-41.png" style="border-radius: 30px;"></a>
-            </div>
-            <div style="margin-left: 1px;"> 
-                <h2 style="font-size: 2em; margin-bottom: 10px;">Sorting algorythm – Bubble Sort</h2>
-            </div>
-        </div>
-    </div>
-    <div class="blackdiv6">
-        <div style="display: flex; align-items: center;">
-            <div class="tetraedr2">
-                <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCBsBWztFJT8eIIFbWZ2ak--4GdYaxD7VZ_A&s" style="border-radius: 30px;"></a>
-                <div style="margin-left: 1px;"> 
-                    <h2 style="font-size: 2em; margin-bottom: 10px;">Sorting algorythm – Quick Sort</h2>
+        
+        <div class="blackdiv6">
+            <div style="display: flex; align-items: center;">
+                <div class="tetraedr2">
+                    <a href="">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCBsBWztFJT8eIIFbWZ2ak--4GdYaxD7VZ_A&s" style="border-radius: 30px;">
+                    </a>
+                    <div class="text-container">
+                        <h2>Sorting algorithm – Quick Sort</h2>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- <div class="whitediv4">
-        <div style="display: flex; align-items: center;">
-            <div class="tetraedr1">
-                <img src="https://i.ibb.co.com/zVyLywX/2024-04-16-23-39-41.png" style="border-radius: 30px;">
-            </div>
-            <div style="margin-left: 1px;"> 
-                <h2 style="font-size: 2em; margin-right: 200px; margin-top: 150px;">Sorting algorythm – Quick Sort</h2>
-            </div>
-        </div> -->
-
-        <!-- <div style="margin-top: 600px; display: flex; position: absolute; align-items: center; margin-bottom: 200px;"
-        <h1>Contact Me</h1>
-        <form action="#" method="post">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br>
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" required></textarea><br>
-            <input type="submit" value="Submit">
-        </form>
-    </div> -->
+        
     <div class="contact-section">
         <h1>Contact Me</h1>
         <form action="#" method="post">
